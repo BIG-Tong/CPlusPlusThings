@@ -30,7 +30,6 @@ private:
 class Fraction1 {
 public:
     // explicit-one-argument ctor 可以把别的东西转换为Fraction这种
-    explicit Fraction1(int num, int den = 1) : m_numerator(num), m_denominator(den) {}
 
     Fraction1 operator+(const Fraction1 &f) {
         return Fraction1(this->m_numerator + f.m_numerator);
